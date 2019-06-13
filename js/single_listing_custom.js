@@ -21,7 +21,7 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
+	/*
 
 	1. Vars and Inits
 
@@ -53,7 +53,7 @@ $(document).ready(function()
 	initGoogleMap();
 	initSearchForm();
 
-	/* 
+	/*
 
 	2. Set Header
 
@@ -89,7 +89,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	3. Init Menu
 
@@ -126,7 +126,7 @@ $(document).ready(function()
 				}
 			});
 
-	
+
 		}
 	}
 
@@ -142,7 +142,7 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-    /* 
+    /*
 
 	4. Init Search
 
@@ -165,7 +165,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	5. Init More Options
 
@@ -186,7 +186,7 @@ $(document).ready(function()
 
 				var panel = ele;
 				var panelH = ele.prop('scrollHeight') + "px";
-				
+
 				if(panel.css('max-height') == "0px")
 				{
 					panel.css('max-height', panel.prop('scrollHeight') + "px");
@@ -194,12 +194,12 @@ $(document).ready(function()
 				else
 				{
 					panel.css('max-height', "0px");
-				} 
+				}
 			});
 		}
 	}
 
-	/* 
+	/*
 
 	6. Init Listing Slider
 
@@ -269,7 +269,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	8. Init Google Map
 
@@ -277,7 +277,7 @@ $(document).ready(function()
 
 	function initGoogleMap()
 	{
-		var myLatlng = new google.maps.LatLng(36.132229, -5.351153);
+		var myLatlng = new google.maps.LatLng(37.983810, 23.727539);
     	var mapOptions = 
     	{
     		center: myLatlng,
@@ -300,7 +300,7 @@ $(document).ready(function()
 
     	// Initialize a map with options
     	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-   
+
 		// Re-center map after window resize
 		google.maps.event.addDomListener(window, 'resize', function()
 		{
@@ -312,7 +312,7 @@ $(document).ready(function()
 		});
 	}
 
-	/* 
+	/*
 
 	9. Init Search Form
 
@@ -353,7 +353,7 @@ $(document).ready(function()
 					searchForm.removeClass('active');
 					searchActive = false;
 				}
-			});	
+			});
 		}
 	}
 });
